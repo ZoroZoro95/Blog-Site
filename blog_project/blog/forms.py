@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('Blog Author','Blog title', 'Blog Text',)
+        fields = ('Blog Author user authorized','Blog title', 'Blog Text',)
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'textinputclass'}),
