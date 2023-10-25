@@ -19,7 +19,7 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('author', 'text',)
+        fields = ('author', 'textArea',)
 
         widgets = {
             'user': forms.TextInput(attrs={'class': 'textinputclass'}),
